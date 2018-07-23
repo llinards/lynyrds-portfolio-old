@@ -38,6 +38,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- CSS media queris -->
+    <link rel="stylesheet" href="css/media-queries.css">
+
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
 
@@ -51,7 +54,7 @@
         <!-- NAVBAR -->
         <div class="navbar-wrapper">
             <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".menu-collapse">
                             <span class="sr-only">Toogle navigation</span>
@@ -64,17 +67,17 @@
                         </a>
                     </div>
                     <div class="navbar-collapse collapse menu-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active">
+                        <ul class="nav navbar-nav navbar-right menu__items">
+                            <li class="active menu__item">
                                 <a href="#home">Home</a>
                             </li>
-                            <li>
+                            <li class="menu__item">
                                 <a href="#developing">Developing</a>
                             </li>
-                            <li>
+                            <li class="menu__item">
                                 <a href="#projects">My Projects</a>
                             </li>
-                            <li>
+                            <li class="menu__item">
                                 <a href="#contact">Contact Me</a>
                             </li>
                         </ul>
@@ -86,104 +89,89 @@
     </header>
 
     <!-- JUMBOTRON -->
-    <div id="home">
-        <section id="welcome">
-            <div class="jumbotron">
-                <div class="container clearfix">
-                    <div class="col-sm-12">
-                        <div class="welcome-text">
-                            <h1>Hello there!
-
-                            </h1>
-                            <h2>My name is Linards.</h2>
-                        </div>
-                    </div>
+    <section id="welcome">
+        <div class="jumbotron">
+            <div class="container welcome__section">
+                <div class="welcome__headings">
+                    <h2 class="welcome__heading text-uppercase">Hello!</h2>
+                    <h2 class="welcome__heading">My name is Linards. I'm full stack / e-commerce developer.</h2>
+                    <div class="white_bar welcome__white_bar"></div>
                 </div>
-
+                <a href="#developing">
+                    <i class="fas fa-arrow-down welcome__arrow"></i>
+                </a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- FULLSTACK DEV -->
-        <section class="brown-bar">
+
+    <!-- SKILLS -->
+    <div id="developing">
+        <section id="skills">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <h3>I'm
-                            <strong>full stack / e-commerce developer.</strong>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <div class="skills">
+                        <div class="col-sm-3">
+                            <h3>Front-End:</h3>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check"></i> HTML5</li>
+                                <li>
+                                    <i class="fas fa-check"></i> CSS3</li>
+                                <li>
+                                    <i class="fas fa-check"></i> Bootstrap</li>
+                                <li>
+                                    <i class="fas fa-check"></i> jQuery</li>
+                                <li>
+                                    <i class="fas fa-check"></i> AngularJS</li>
 
-        <!-- SKILLS -->
-        <div id="developing">
-            <section id="skills">
-                <div class="container">
-                    <div class="row">
-                        <div class="skills">
-                            <div class="col-sm-3">
-                                <h3>Front-End:</h3>
-                                <ul>
-                                    <li>
-                                        <i class="fas fa-check"></i> HTML5</li>
-                                    <li>
-                                        <i class="fas fa-check"></i> CSS3</li>
-                                    <li>
-                                        <i class="fas fa-check"></i> Bootstrap</li>
-                                    <li>
-                                        <i class="fas fa-check"></i> jQuery</li>
-                                    <li>
-                                        <i class="fas fa-check"></i> AngularJS</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h3>Back-End:</h3>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check"></i> NodeJS</li>
+                                <li>
+                                    <i class="fas fa-check"></i> Express</li>
+                                <li>
+                                    <i class="fas fa-check"></i> ASP.NET (C#)</li>
+                                <li>
+                                    <i class="fas fa-check"></i> WordPress</li>
+                                <li>
+                                    <i class="fas fa-check"></i> Shopify's .liquid
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h3>Database:</h3>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check"></i> Microsoft SQL</li>
+                                <li>
+                                    <i class="fas fa-check"></i> MongoDB</li>
+                                <li>
+                                    <i class="fas fa-check"></i> MySQL</li>
 
-                                </ul>
-                            </div>
-                            <div class="col-sm-3">
-                                <h3>Back-End:</h3>
-                                <ul>
-                                    <li>
-                                        <i class="fas fa-check"></i> NodeJS</li>
-                                    <li>
-                                        <i class="fas fa-check"></i> Express</li>
-                                    <li>
-                                        <i class="fas fa-check"></i> ASP.NET (C#)</li>
-                                    <li>
-                                        <i class="fas fa-check"></i> WordPress</li>
-                                    <li>
-                                        <i class="fas fa-check"></i> Shopify's .liquid
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-3">
-                                <h3>Database:</h3>
-                                <ul>
-                                    <li>
-                                        <i class="fas fa-check"></i> Microsoft SQL</li>
-                                    <li>
-                                        <i class="fas fa-check"></i> MongoDB</li>
-                                    <li>
-                                        <i class="fas fa-check"></i> MySQL</li>
-
-                                </ul>
-                            </div>
-                            <div class="col-sm-3">
-                                <h3>E-Commerce:</h3>
-                                <ul>
-                                    <li>
-                                        <i class="fas fa-check"></i> Shopify</li>
-                                    <li>
-                                        <i class="fas fa-check"></i> PrestaShop</li>
-                                    <li>
-                                        <i class="fas fa-check"></i> WooCommerce</li>
-                                </ul>
-                            </div>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h3>E-Commerce:</h3>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check"></i> Shopify</li>
+                                <li>
+                                    <i class="fas fa-check"></i> PrestaShop</li>
+                                <li>
+                                    <i class="fas fa-check"></i> WooCommerce</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <h3 class="text-center">Sounds like you?</h3>
+            </div>
+            <h3 class="text-center">Sounds like you?</h3>
 
-            </section>
-        </div>
+        </section>
     </div>
 
 

@@ -32,6 +32,17 @@ img {
     max-width: 100%;
 }
 
+.white_bar {
+    background-color: #fff;
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.welcome__white_bar {
+    margin-top: 50px;
+}
+
 /* NAVBAR */
 
 .navbar-inverse {
@@ -44,8 +55,13 @@ img {
     border: none;
 }
 
+.menu__item a {
+    letter-spacing: 1px;
+}
+
 li.active a {
     background-color: #8b4513 !important;
+    border-radius: 5px;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -65,18 +81,57 @@ li.active a {
 
 section#welcome {
     text-align: center;
-    padding: 40px 0;
+    padding-bottom: 40px;
+    /* background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)), url("/img/bg.jpg"); */
     background-color: #3c2f2a;
+    height: 100vh;
 }
 
 section .jumbotron {
     background-color: transparent;
+    height: 100%;
+    position: relative;
 }
 
-.welcome-text {
-    margin-top: 15%;
-    margin-bottom: 10%;
-    color: white;
+.welcome__section {
+    height: 100%;
+}
+
+.welcome__headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.welcome__heading {
+    margin: 0;
+    color: #fff !important;
+    letter-spacing: 2px;
+}
+
+.welcome__arrow {
+    color: #fff;
+    font-size: 55px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 50px;
+    animation: upAndDown 5s infinite;
+    font-weight: 300;
+}
+
+@keyframes upAndDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(25px);
+    }
+    100% {
+        transfrom: translateY(0);
+    }
 }
 
 /* SKILLS */
@@ -288,19 +343,3 @@ section.all-projects .navbar-header svg {
     text-align: center;
     padding: 15px;
 }
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 767px) {
-    .nav-pills>li {
-        float: left;
-        clear: left;
-        width: 170px;
-    }
-    section.all-projects .navbar-header p,
-    section.all-projects .navbar-header svg {
-        display: inline-block;
-    }
-}
-
-@media screen and (max-width: 568px) {}
