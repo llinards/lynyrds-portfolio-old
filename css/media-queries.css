@@ -10,16 +10,57 @@
     section.all-projects .navbar-header svg {
         display: inline-block;
     }
+    .skills {
+        text-align: center;
+    }
+    section#doing {
+        clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+    }
+    .develop-things {
+        text-align: center;
+    }
+
+    .develop-things img {
+        width: 60%;
+    }
+
+    .develop-things p.question {
+        padding-bottom: 0;
+        font-size: 17px;
+    }
+
+    .develop-things p.answer {
+        padding-bottom: 5%;
+        font-size: 17px
+    }
+
+    .develop-things p.answer strong {
+        font-size: 17px;
+    }
+
+    .contact-me__heading {
+        font-size: 17px;
+    }
+
+    .contact-me-form .btn-default {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .thank_you__heading {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 549px) {
-    .welcome__heading {
+    .welcome__heading,
+    .skills__heading,
+    .projects__heading {
         font-size: 20px;
     }
     .white__bar {
         height: 5px;
     }
-
     .welcome__arrow {
         font-size: 35px;
     }

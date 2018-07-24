@@ -142,6 +142,12 @@ section#skills {
     min-height: 250px;
 }
 
+.skills__heading {
+    margin-bottom: 20px;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
 .skills li {
     list-style: none;
 }
@@ -157,10 +163,11 @@ section#doing {
     background-size: cover;
     background-color: #3c2f2a;
     color: white;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
 }
 
 .develop-things {
-    padding-top: 5%;
+    padding-top: 12%;
 }
 
 .develop-things img {
@@ -168,12 +175,20 @@ section#doing {
     -moz-border-radius: 10%;
     border-radius: 10%;
     padding-bottom: 10px;
+    transition: all .4s;
+}
+
+.develop-things img:hover {
+    transform: scale(1.05);
 }
 
 .question {
     font-size: 20px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
+
+
 
 #answer {
     padding-top: 29px;
@@ -181,6 +196,7 @@ section#doing {
 
 .develop-things p {
     padding-bottom: 10%;
+    letter-spacing: 1px;
 }
 
 /* WHAT I HAVE DONE */
@@ -206,9 +222,17 @@ section#doing {
     color: white;
 }
 
+.contact-me__heading {
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: 1px;
+}
+
 .contact-me-form {
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* FOOTER */
@@ -232,6 +256,10 @@ footer .row p {
     padding: 40px 0;
     min-height: 500px;
     background-color: #3c2f2a;
+}
+
+.projects__heading {
+    letter-spacing: 1px;
 }
 
 /* PROJECT-LISTING */
@@ -344,4 +372,9 @@ section.all-projects .navbar-header svg {
     color: white;
     text-align: center;
     padding: 15px;
+    margin-top: 10px;
+}
+
+.thank_you__heading {
+    letter-spacing: 1px;
 }
