@@ -49,6 +49,7 @@ img {
     background-color: #3c2f2a;
     border-color: white;
     margin-bottom: 0;
+    padding: 10px;
 }
 
 .navbar {
@@ -85,6 +86,7 @@ section#welcome {
     /* background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)), url("/img/bg.jpg"); */
     background-color: #3c2f2a;
     height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 section .jumbotron {
@@ -117,7 +119,7 @@ section .jumbotron {
     left: 0;
     right: 0;
     margin: 0 auto;
-    bottom: 10%;
+    bottom: 25%;
     animation: upAndDown 5s infinite;
     font-weight: 300;
 }
