@@ -78,6 +78,33 @@ li.active a {
     border-color: transparent;
 }
 
+.navbar-fixed-top {
+    transition: all .4s;
+}
+
+@media (min-width: 767px) {
+    .navbar-inverse {
+        padding: 30px;
+    }
+    .navbar-fixed-top.scrolled {
+        opacity: 0.99;
+        padding: 5px;
+        transition: all .4s;
+    }
+}
+
+@media (max-width: 766px) {
+    .navbar-inverse {
+        text-align: center;
+    }
+}
+
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #8b4513;
+    border-radius: 3px;
+}
+
 /* JUMBOTRON */
 
 section#welcome {
@@ -188,8 +215,6 @@ section#doing {
     letter-spacing: 1px;
 }
 
-
-
 #answer {
     padding-top: 29px;
 }
@@ -197,6 +222,17 @@ section#doing {
 .develop-things p {
     padding-bottom: 10%;
     letter-spacing: 1px;
+}
+
+@media (min-width: 767px) {
+    .project-list {
+        transition: all .4s;
+    }
+    .project__item:hover {
+        box-shadow: 3px 3px 3px 3px gray;
+        transition: all .4s;
+        transform: scale(1.01);
+    }
 }
 
 /* WHAT I HAVE DONE */
