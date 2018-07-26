@@ -13,40 +13,37 @@
     .skills {
         text-align: center;
     }
-    section#doing {
-        clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+    #_developing {
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
     .develop-things {
         text-align: center;
     }
-
+    .navbar-inverse {
+        text-align: center;
+    }
     .develop-things img {
         width: 60%;
     }
-
     .develop-things p.question {
         padding-bottom: 0;
         font-size: 17px;
     }
-
     .develop-things p.answer {
         padding-bottom: 5%;
         font-size: 17px
     }
-
     .develop-things p.answer strong {
         font-size: 17px;
     }
-
     .contact-me__heading {
         font-size: 17px;
     }
-
     .contact-me-form .btn-default {
         display: block;
         margin: 0 auto;
     }
-
     .thank_you__heading {
         font-size: 17px;
     }
@@ -63,5 +60,38 @@
     }
     .welcome__arrow {
         font-size: 35px;
+    }
+}
+
+@media (min-width: 767px) {
+    .navbar-inverse {
+        padding: 30px;
+    }
+    .navbar-fixed-top.scrolled {
+        opacity: 0.99;
+        padding: 5px;
+        transition: all .4s;
+    }
+    section#welcome {
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+    section#doing {
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    }
+    .project-list {
+        transition: all .4s;
+    }
+    .project__item:hover {
+        box-shadow: 3px 3px 3px 3px gray;
+        transition: all .4s;
+        transform: scale(1.01);
+    }
+    .develop-thing {
+        transition: all .4s;
+        backface-visibility: hidden;
+    }
+    .develop-thing:hover {
+        transform: scale(1.03);
+        backface-visibility: hidden;
     }
 }

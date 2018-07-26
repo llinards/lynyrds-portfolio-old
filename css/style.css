@@ -82,23 +82,6 @@ li.active a {
     transition: all .4s;
 }
 
-@media (min-width: 767px) {
-    .navbar-inverse {
-        padding: 30px;
-    }
-    .navbar-fixed-top.scrolled {
-        opacity: 0.99;
-        padding: 5px;
-        transition: all .4s;
-    }
-}
-
-@media (max-width: 766px) {
-    .navbar-inverse {
-        text-align: center;
-    }
-}
-
 .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>li>a:hover {
     background-color: #8b4513;
@@ -113,7 +96,6 @@ section#welcome {
     /* background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)), url("/img/bg.jpg"); */
     background-color: #3c2f2a;
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 section .jumbotron {
@@ -190,7 +172,6 @@ section#doing {
     background-size: cover;
     background-color: #3c2f2a;
     color: white;
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
 }
 
 .develop-things {
@@ -202,11 +183,6 @@ section#doing {
     -moz-border-radius: 10%;
     border-radius: 10%;
     padding-bottom: 10px;
-    transition: all .4s;
-}
-
-.develop-things img:hover {
-    transform: scale(1.05);
 }
 
 .question {
@@ -222,17 +198,6 @@ section#doing {
 .develop-things p {
     padding-bottom: 10%;
     letter-spacing: 1px;
-}
-
-@media (min-width: 767px) {
-    .project-list {
-        transition: all .4s;
-    }
-    .project__item:hover {
-        box-shadow: 3px 3px 3px 3px gray;
-        transition: all .4s;
-        transform: scale(1.01);
-    }
 }
 
 /* WHAT I HAVE DONE */
@@ -254,7 +219,7 @@ section#doing {
 }
 
 .contact-me-form .btn-default:hover {
-    background-color: #9d9d9d;
+    background-color: #8b4513;
     color: white;
 }
 

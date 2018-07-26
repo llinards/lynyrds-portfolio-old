@@ -16,7 +16,7 @@ $(document).ready(function () {
 	})
 	///
 	///
-	$(document).on('click', 'a[href^="#"]', function (e) {
+	$(document).on('click', 'a[href^="#_"]', function (e) {
 		var id = $(this).attr('href');
 		var $id = $(id);
 		if ($id.length === 0) {
@@ -30,7 +30,7 @@ $(document).ready(function () {
 	});
 	///
 	///
-	$(document).on('click', '.navbar-collapse', function (e) {
+	$(document).on('click', '.navbar-collapse-menu', function (e) {
 		if ($(e.target).is('a')) {
 			$(this).collapse('hide');
 		}
