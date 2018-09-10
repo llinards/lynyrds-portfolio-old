@@ -85,6 +85,7 @@
         box-shadow: 3px 3px 3px 3px gray;
         transition: all .4s;
         transform: scale(1.01);
+        z-index: 2;
     }
     .develop-thing {
         transition: all .4s;

@@ -8,7 +8,6 @@ body {
     margin-top: 50px;
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
-    /* background: url('../img/tile.jpg') top left repeat; */
 }
 
 /* GLOBAL */
@@ -24,9 +23,6 @@ h6 {
     font-weight: bold;
 }
 
-/* section {
-    padding: 15px;
-} */
 
 img {
     max-width: 100%;
@@ -93,7 +89,6 @@ li.active a {
 section#welcome {
     text-align: center;
     padding-bottom: 40px;
-    /* background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)), url("/img/bg.jpg"); */
     background-color: #3c2f2a;
     height: 100vh;
 }
@@ -137,9 +132,11 @@ section .jumbotron {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(25px);
     }
+
     100% {
         transfrom: translateY(0);
     }
@@ -236,6 +233,11 @@ section#doing {
     padding-right: 15px;
 }
 
+.contact-info {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 /* FOOTER */
 
 footer .row h3,
@@ -292,15 +294,21 @@ hr {
     text-transform: uppercase;
 }
 
-.project-list p a.btn-default {
-    border-color: #9d9d9d;
-    color: #9d9d9d;
+.project-list p a.btn-default:hover {
+    border-color: #8b4513;
+    background-color: #8b4513;
+    color: #fff;
 }
 
-.project-list p a.btn-default:hover {
+.project-list p a.btn-default.disabled {
+    background-color: #9d9d9d;
+    border: none;
+}
+
+.project-list p a.btn-default {
     color: white;
-    background-color: #8b4513;
-    border-color: #8b4513;
+    background-color: #3c2f2a;
+    border-color: #3c2f2a;
 }
 
 .project-list hr#bottom {
@@ -378,4 +386,54 @@ section.all-projects .navbar-header svg {
 
 .thank_you__heading {
     letter-spacing: 1px;
+}
+
+.project__item__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+#button {
+    display: inline-block;
+    background-color: #3c2f2a;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 0.25rem;
+    margin: 1, 875rem;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    color: #fff;
+    padding-top: 0.6rem;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #8b4513;
+}
+
+#button:active {
+    background-color: #1d2124;
+}
+
+#button::after {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 3.125rem;
+    color: #fff;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.button__icon {
+    font-size: 2.5rem;
 }
